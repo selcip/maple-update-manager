@@ -1,15 +1,18 @@
 {
-  "name": "file-uploader",
+  "name": "maple-update-manager",
   "version": "1.0.0",
-  "description": "An AJAX file uploader using JS and NodeJS",
+  "description": "NodeJS service to serve updated files for the IDMStory Launcher",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
-  "author": "Fady Makram",
-  "license": "MIT",
+  "author": "selcip <eduselcip@gmail.com>",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
-    "formidable": "^1.0.17"
+    "forEachAsync": "^3.0.0",
+    "formidable": "^1.0.17",
+    "glob": "^7.1.1",
+    "serve-favicon": "^2.3.2"
   }
 }

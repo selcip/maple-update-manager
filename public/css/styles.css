@@ -5,7 +5,7 @@
 html,
 body {
   height: 100%;
-  background-color: #4791D2;
+  background: url('../img/bg.jpeg') no-repeat;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 .upload-btn {
   color: #ffffff;
-  background-color: #F89406;
+  background-color: #35989c;
   border: none;
 }
 
@@ -28,7 +28,7 @@ body {
 .upload-btn:active,
 .upload-btn.active {
   color: #ffffff;
-  background-color: #FA8900;
+  background-color: #35989c;
   border: none;
 }
 
