@@ -1,4 +1,4 @@
-![IDMStory](http://i.imgur.com/3QPT1Pv.png = 128x128)
+![IDMStory](http://i.imgur.com/3QPT1Pv.png =128x128)
 # UPDATE MANAGER - IDMStory
 
 This app was built to provide a service for the [IDMStory launcher](https://github.com/selcip/maplestory-v62-launcher-electron)
