@@ -22,32 +22,38 @@ app.get('/check', function(req, res){
   res.json(size)
 });
 
-app.get('/download/:file', function(req, res){
-
-  switch(req.params.file){
+app.get('/download/:file', function(req, res) {
+  switch (req.params.file) {
     case 'Map.wz':
-      res.redirect('https://www.dropbox.com/s/tt7vmob1ydbyj86/Map.wz?dl=1')
-      break;
+      res.redirect('https://www.dropbox.com/s/ghp3ejo8btvhmg6/Map.wz?dl=1')
+      break
     case 'Character.wz':
-      res.redirect('https://www.dropbox.com/s/rpnpcm5w57oxus3/Character.wz?dl=1')
-      break;
+      res.redirect('https://www.dropbox.com/s/0yi4wcxdql7pkd0/Character.wz?dl=1')
+      break
     case 'Mob.wz':
-      res.redirect('https://www.dropbox.com/s/1g591kgislm1q6i/Mob.wz?dl=1')
-      break;
+      res.redirect('https://www.dropbox.com/s/p71q6vreus7zdal/Mob.wz?dl=1')
+      break
     case 'Sound.wz':
-      res.redirect('https://www.dropbox.com/s/t27lfij5zpkce1p/Sound.wz?dl=1')
-      break;
+      res.redirect('https://www.dropbox.com/s/0mu918xysi8ys63/Sound.wz?dl=1')
+      break
     case 'Item.wz':
-      res.redirect('https://www.dropbox.com/s/3ib2o9adxdd3qb9/Item.wz?dl=1')
-      break;
+      res.redirect('https://www.dropbox.com/s/ucury7bc3jk2riy/Item.wz?dl=1')
+      break
     case 'UI.wz':
-      res.redirect('https://www.dropbox.com/s/90lmbg53uhsyjql/UI.wz?dl=1')
-      break;
+      res.redirect('https://www.dropbox.com/s/0561koral26j8yw/UI.wz?dl=1')
+      break
+    case 'Skill.wz':
+      res.redirect('https://www.dropbox.com/s/uwsc2s9pk4x9xud/Skill.wz?dl=1')
+      break
+    case 'Reactor.ez':
+      res.redirect('https://www.dropbox.com/s/wmp9ymh6amhjetl/Reactor.wz?dl=1')
+      break
+    case 'Npc.wz':
+      res.redirect('https://www.dropbox.com/s/wmp9ymh6amhjetl/Reactor.wz?dl=1')
+      break
     default:
-      res.download(path.join(__dirname, 'uploads', req.params.file))
-      break;
-}
-
+      res.download(path.join(__dirname, 'uploads', req.params.file))break;
+  }
 })
 
 app.post('/upload', function(req, res){
