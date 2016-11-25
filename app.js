@@ -23,7 +23,31 @@ app.get('/check', function(req, res){
 });
 
 app.get('/download/:file', function(req, res){
-  res.download(path.join(__dirname, 'uploads', req.params.file))
+
+  switch(req.params.file){
+    case 'Map.wz':
+      res.redirect('https://www.dropbox.com/s/tt7vmob1ydbyj86/Map.wz?dl=1')
+      break;
+    case 'Character.wz':
+      res.redirect('https://www.dropbox.com/s/rpnpcm5w57oxus3/Character.wz?dl=1')
+      break;
+    case 'Mob.wz':
+      res.redirect('https://www.dropbox.com/s/1g591kgislm1q6i/Mob.wz?dl=1')
+      break;
+    case 'Sound.wz':
+      res.redirect('https://www.dropbox.com/s/t27lfij5zpkce1p/Sound.wz?dl=1')
+      break;
+    case 'Item.wz':
+      res.redirect('https://www.dropbox.com/s/3ib2o9adxdd3qb9/Item.wz?dl=1')
+      break;
+    case 'UI.wz':
+      res.redirect('https://www.dropbox.com/s/90lmbg53uhsyjql/UI.wz?dl=1')
+      break;
+    default:
+      res.download(path.join(__dirname, 'uploads', req.params.file))
+      break;
+}
+
 })
 
 app.post('/upload', function(req, res){
@@ -50,6 +74,6 @@ app.post('/upload', function(req, res){
 
 });
 
-var server = app.listen(3000, function(){
+var server = app.listen(80, function(){
   console.log('Server running on port 3000')
 })
